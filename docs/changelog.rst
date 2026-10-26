@@ -18,10 +18,9 @@ Bug fixes
 
 - Add ``alternatives.item_updated`` to the typed event list so
   :doc:`plugins/hook` can listen to it. :bug:`7036`
-
 - :doc:`plugins/replaygain`: Setting ``threads: 0`` in the configuration no
-  longer crashes ``beet replaygain``; it now disables parallelism like
-  ``--threads 0``. :bug:`7113`
+    longer crashes ``beet replaygain``; it now disables parallelism like
+    ``--threads 0``. :bug:`7113`
 
 ..
     For plugin developers
