@@ -1604,7 +1604,7 @@ class ReplayGainPlugin(BeetsPlugin):
             threads: int = (
                 opts.threads
                 if opts.threads is not None
-                else self.config["threads"].get(int)    
+                else self.config["threads"].get(int)
             )
             if threads:
                 self.open_pool(threads)
