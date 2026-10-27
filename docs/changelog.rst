@@ -24,7 +24,7 @@ Bug fixes
 - :doc:`plugins/replaygain`: Skip tracks and albums whose files are missing
     from disk, with a warning suggesting ``beet update``, instead of failing and
     hanging. :bug:`6963`
-    
+
 ..
     For plugin developers
     ~~~~~~~~~~~~~~~~~~~~~
