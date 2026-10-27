@@ -7,7 +7,7 @@
 | Base project | beets (Python) |
 | Copied from | `beetbox/beets` |
 | Presentation topic | Doxygen |
-| Selected issue | _fill this in once your group has chosen_ |
+| Selected issue | 6963, 7113 |
 
 ## Team members
 
