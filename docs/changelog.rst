@@ -21,6 +21,9 @@ Bug fixes
 - :doc:`plugins/replaygain`: Setting ``threads: 0`` in the configuration no
     longer crashes ``beet replaygain``; it now disables parallelism like
     ``--threads 0``. :bug:`7113`
+- :doc:`plugins/replaygain`: Skip tracks and albums whose files are missing
+    from disk, with a warning suggesting ``beet update``, instead of failing and
+    hanging. :bug:`6963`
 
 ..
     For plugin developers
