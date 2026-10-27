@@ -1418,6 +1418,15 @@ class ReplayGainPlugin(BeetsPlugin):
         item. If replay gain information is already present in all
         items, nothing is done.
         """
+        if missing := [i for i in album.items() if not i.filepath.exists()]:
+            self._log.warning(
+                "Skipping album {}: {} file(s) not found on disk"
+                " (run `beet update` to sync the library)",
+                album,
+                len(missing),
+            )
+            return
+
         if not force and not self.album_requires_gain(album):
             self._log.info("Skipping album {}", album)
             return
@@ -1468,6 +1477,14 @@ class ReplayGainPlugin(BeetsPlugin):
         the data to disk.  If replay gain information is already present
         in the item, nothing is done.
         """
+        if not item.filepath.exists():
+            self._log.warning(
+                "Skipping track {}: file not found on disk"
+                " (run `beet update` to sync the library)",
+                item,
+            )
+            return
+
         if not force and not self.track_requires_gain(item):
             self._log.info("Skipping track {}", item)
             return
