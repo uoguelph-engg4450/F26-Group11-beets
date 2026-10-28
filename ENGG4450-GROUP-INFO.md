@@ -11,7 +11,16 @@
 
 ## Team members
 
-
+| Name | GitHub |
+| --- | --- |
+| Hadi Ammar | _not on file yet_ |
+| Noah Peart | [@inoahengineer](https://github.com/inoahengineer) |
+| Jamil Sibai | _not on file yet_ |
+| Omar Alomari | _not on file yet_ |
+| Mustafa | _not on file yet_ |
+| matthew yu | [@mattchyu](https://github.com/mattchyu) |
+| jamie lanot | [@JalanE-TS](https://github.com/JalanE-TS) |
+| Ahmad alwan | _not on file yet_ |
 
 ## How to work in this repository
 
